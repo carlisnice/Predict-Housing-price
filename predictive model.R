@@ -32,7 +32,7 @@ str(newdata1)
 
 
 
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------
 #split data
 set.seed(2)
 library(caTools)
@@ -41,9 +41,9 @@ training_data<-subset(newdata1,split=="TRUE")
 testing_data<-subset(newdata1,split=="FALSE")
 
 #Exploratory Analysis
-
 cr=cor(select(newdata1,-waterfront))
 cr
+
 # to visualize the same 
 library(corrplot)
 corrplot(cr,type="lower")
