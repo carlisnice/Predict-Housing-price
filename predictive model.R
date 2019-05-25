@@ -13,7 +13,7 @@ newdata1$waterfront=as.factor(newdata1$waterfront)
 
 #number of bathroom per house
 newdata1$bathrooms=newdata1$bathrooms*newdata1$bedrooms
-
+ 
 #delete missing value
 newdata1=na.omit(newdata1)
 #delete bathrooms=0 or bedrooms=0
